@@ -1,0 +1,69 @@
+.scroll-content {
+    background: rgba(209, 0, 0, 1) none repeat scroll 0 0 !important;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin-bottom: -1px;
+    margin-top: -1px;
+    overflow: hidden;
+    padding-top: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+
+.app-icon {
+    background: rgba(0, 0, 0, 0) url("../img/logo-red2x.png") repeat scroll center center / cover  !important;
+    border-radius: 50%;
+    height: 125px;
+    margin: 0 auto;
+    width: 125px;
+}
+
+
+.scroll {
+    background: #fff none repeat scroll 0 0 !important;
+    height: 100%;
+}
+
+
+
+.hero {
+    background-size: cover;
+	 background: rgba(0, 0, 0, 0) url("../img/soda.jpg") repeat scroll center center / cover  !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    color: #fff;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 1s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+    width: 100%;
+}
+
+
+.menu .avatar {
+    left: 16px;
+    top: 16px;
+	background: rgba(0, 0, 0, 0) url("../img/logo-red2x.png") repeat scroll center center / cover  !important;
+}
+
+
+.tabs-dark > .tabs, .tabs.tabs-dark {
+    background-color: #444;
+    background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
+    border-color: #111;
+    color: #fff;
+    display: none !important;
+}
+
+.hero > .content {
+    bottom: 0;
+    margin-bottom: 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
