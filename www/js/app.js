@@ -18,6 +18,7 @@ function check_storage(){
 		    console.log('goto main.html');
 	}else{
 			console.log('err');
+			//window.location.replace("index.html");
 		}
 
 }
@@ -32,6 +33,10 @@ function register(){
  	var fname = $('#reg_fname').val();
  	var lname = $('#reg_lastname').val();
  	var email = $('#reg_email').val();
+	var division = $('#division').val();
+	var aunit = $('#aunit').val();
+	var area = $('#reg_area').val();
+	//var lang = $('#reg_lang').val();
 
  	if(username == '' || password == '' || fname == '' || lname == ''){
 
@@ -39,27 +44,40 @@ function register(){
  		if(password == ''){ $('#reg_password_err').show(); }
  		if(fname == ''){ $('#reg_fname_err').show(); }
  		if(lname == ''){ $('#reg_lname_err').show(); }
- 		if(email == ''){ $('#reg_email_err').show(); }		
-		console.log('err empty field'); 	
+ 		if(email == ''){ $('#reg_email_err').show(); }
+        if(division == ''){ $('#reg_division_err').show(); }
+        if(aunit == ''){ $('#reg_aunit_err').show(); }
+        if(area == ''){ $('#reg_area_err').show(); }
+      //  if(lang == ''){ $('#reg_lang_err').show(); }
+        console.log('err empty field');
  	}else{
 
 
-$.post( "http://104.238.96.209/~project/db/register/user", { username: username, password: password, fname: fname, lname: lname, email:email })
+$.post( base_url + '/index.php/register/user', { username: username, password: password, fname: fname, lname: lname, email:email, division:division, aunit:aunit, area:area })
   .done(function( data ) {
 		if(data == 0){
 	 		if(username == ''){ $('#reg_username_err').show(); }
 	 		if(password == ''){ $('#reg_password_err').show(); }
 	 		if(fname == ''){ $('#reg_fname_err').show(); }
 	 		if(lname == ''){ $('#reg_lname_err').show(); }		
-	 		if(email == ''){ $('#reg_email_err').show(); }		
-	 		console.log('err empty field'); 	
+	 		if(email == ''){ $('#reg_email_err').show(); }
+            if(division == ''){ $('#reg_division_err').show(); }
+            if(aunit == ''){ $('#reg_aunit_err').show(); }
+            if(area == ''){ $('#reg_area_err').show(); }
+            if(lang == ''){ $('#reg_lang_err').show(); }
+            console.log('err empty field');
 		}else if(data == 1){   
 					localStorage.setItem("username", username);
 					localStorage.setItem("password", password);
 					localStorage.setItem("email", email);
 					localStorage.setItem("fname", fname);
 					localStorage.setItem("lname", lname);
-					localStorage.setItem("userlogin", username);
+            		localStorage.setItem("userlogin", username);
+			        localStorage.setItem("division", division);
+			        localStorage.setItem("aunit", aunit);
+			        localStorage.setItem("area", area);
+					//localStorage.setItem("lang", lang);
+
 					window.location.href = "main.html";
 
 		}else {      
@@ -109,7 +127,7 @@ function login(){
 }
 */
 
-$.post( "http://104.238.96.209/~project/db/loginuser", { username: user_name_input, password: user_pass_input })
+$.post( base_url + '/index.php/loginuser', { username: user_name_input, password: user_pass_input })
   .done(function( data ) {
 		if(data == 0){
 	 		$('#login_username_error').show(); 
@@ -120,7 +138,7 @@ $.post( "http://104.238.96.209/~project/db/loginuser", { username: user_name_inp
 		}
   });
 
-	/*$.post( "http://104.238.96.209/~project/db/media", { is_live: 1 })
+	/*$.post( "http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/media", { is_live: 1 })
 		.done(function( data ) {
 			if(data == 0){
 				//$('#login_username_error').show();
@@ -135,10 +153,3 @@ $.post( "http://104.238.96.209/~project/db/loginuser", { username: user_name_inp
 }
 
 
-
-
-
-
-
-
- 

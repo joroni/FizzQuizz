@@ -1,6 +1,7 @@
-$(function() {
+//$(function() {
 //Enable swiping...
-$("#swipe_menu").swipe( {
+var base_url = "http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver";
+/* $("#swipe_menu").swipe( {
 	//Generic swipe handler for all directions
 	swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
 		 if(direction == 'right'){
@@ -13,14 +14,13 @@ $("#swipe_menu").swipe( {
 });
 });
 
-
-function playMovie() {
+function playMovie() { */
     /*$("video").on('click', function(){
 
 
     });*/
 
-}
+//}
 
 
 
@@ -29,7 +29,7 @@ function fillmod() {
     //document.getElementById("mod_video").innerHTML = "";
 
     $.ajax({
-        url:'http://104.238.96.209/~project/db/media/1',
+        url:base_url + '/app/views/media/index.php/media/1',
         dataType: 'jsonp',
         jsonp: 'jsoncallback',
         timeout: 5000,
@@ -109,7 +109,7 @@ function noNet(path, success, error)
 
 
 
-noNet('http://104.238.96.209/~project/db/json.php',
+noNet(base_url +'/json.php',
          function(data) {
 				for(i = 0; i < data.length; i++) {
 					//document.getElementById("result1").innerHTML += '<li> ' + data[i]['name'] + '</li>';
@@ -119,19 +119,6 @@ noNet('http://104.238.96.209/~project/db/json.php',
 );
 
 
-
-
-
-
-
-
-function hideProf(){
-    $('#fixed-tab-profile').hide();
-}
-
-function showProf(){
-    $('#fixed-tab-profile').show();
-}
 
 
 
