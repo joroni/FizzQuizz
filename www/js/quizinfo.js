@@ -77,7 +77,7 @@ function validateMyTurn() {
             $('#getStarted2').html('<p>See you on the next round...</p>');
 
         } else {
-            $('.sweet-alert .sa.sa-custom').css('display', 'none');
+            alertCalculatingNewSet();
             console.log('Ok really first time');
             $('#getStarted2').html('<p>PLAY!</p>');
             $('#getStarted2').removeAttr('disabled', 'disabled');
@@ -96,6 +96,17 @@ function validateMyTurn() {
         }
 
 
+
+
+        function alertCalculatingNewSet(){
+
+            $('.sweet-alert .sa.sa-custom').css('display', 'inline-block');
+
+            $('.sweet-alert .sa-icon.sa-success').show();
+
+            $('.sweet-alert h2').html('New set of questions available');
+            $('.sweet-alert .sa-confirm-button-container').show();
+        }
 
         /*  getInitQuizData(); */
 

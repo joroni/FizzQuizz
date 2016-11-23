@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5a1e43f-5b04-4bc3-a79a-7308079d0c0b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fizzquizzData.html" afterPath="$PROJECT_DIR$/www/fizzquizzData.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/quizinfo.js" afterPath="$PROJECT_DIR$/www/js/quizinfo.js" />
     </list>
     <ignored path="FizzQuizz-Alpha.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,8 +49,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="1242" column="33" selection-start-line="1242" selection-start-column="33" selection-end-line="1242" selection-end-column="33" />
+            <state relative-caret-position="250">
+              <caret line="1244" column="18" selection-start-line="1244" selection-start-column="18" selection-end-line="1244" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -94,8 +94,8 @@
       <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="88" column="33" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="33" />
+            <state relative-caret-position="195">
+              <caret line="121" column="23" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -121,8 +121,8 @@
       <file leaf-file-name="fizzquizzData.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/fizzquizzData.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="95" column="9" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,11 +131,11 @@
       <file leaf-file-name="quizinfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/quizinfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
+            <state relative-caret-position="427">
+              <caret line="102" column="72" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
               <folding>
-                <marker date="1479937351000" expanded="true" signature="266:301" placeholder="..." />
-                <marker date="1479937351000" expanded="true" signature="333:368" placeholder="..." />
+                <marker date="1479938643000" expanded="true" signature="266:301" placeholder="..." />
+                <marker date="1479938643000" expanded="true" signature="333:368" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -178,9 +178,9 @@
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/main.html" />
         <option value="$PROJECT_DIR$/www/css/custom.css" />
-        <option value="$PROJECT_DIR$/www/profile.html" />
-        <option value="$PROJECT_DIR$/www/js/quizinfo.js" />
         <option value="$PROJECT_DIR$/www/fizzquizzData.html" />
+        <option value="$PROJECT_DIR$/www/js/quizinfo.js" />
+        <option value="$PROJECT_DIR$/www/profile.html" />
       </list>
     </option>
   </component>
@@ -393,12 +393,12 @@
       <updated>1472418361416</updated>
       <workItem from="1472418363218" duration="3422000" />
       <workItem from="1472435194682" duration="203000" />
-      <workItem from="1479894041040" duration="22224000" />
+      <workItem from="1479894041040" duration="22863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25849000" />
+    <option name="totallyTimeSpent" value="26488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -531,36 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="1242" column="33" selection-start-line="1242" selection-start-column="33" selection-end-line="1242" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3630">
-          <caret line="248" column="30" selection-start-line="248" selection-start-column="30" selection-end-line="248" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#div#1;n#center#0;n#div#0;n#section#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1479922580000" expanded="true" signature="2835:2870" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/quizinfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
-          <folding>
-            <marker date="1479937351000" expanded="true" signature="266:301" placeholder="..." />
-            <marker date="1479937351000" expanded="true" signature="333:368" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -581,10 +551,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3630">
+          <caret line="248" column="30" selection-start-line="248" selection-start-column="30" selection-end-line="248" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#center#0;n#div#0;n#section#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1479922580000" expanded="true" signature="2835:2870" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="1244" column="18" selection-start-line="1244" selection-start-column="18" selection-end-line="1244" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/quizinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="102" column="72" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
+          <folding>
+            <marker date="1479938643000" expanded="true" signature="266:301" placeholder="..." />
+            <marker date="1479938643000" expanded="true" signature="333:368" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="88" column="33" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="33" />
+        <state relative-caret-position="195">
+          <caret line="121" column="23" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -608,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/fizzquizzData.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="95" column="9" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding />
         </state>
       </provider>
