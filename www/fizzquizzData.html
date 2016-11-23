@@ -359,9 +359,9 @@ function loadQuestionItems() {
     function post_score_new() {
 
 
-        htmlspecialchars = function(s) {
+        /*htmlspecialchars = function(s) {
             return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\//g, "-");;
-        };
+        };*/
         //  var attempts = localstorage.getitem("attempts");
 
 
@@ -376,9 +376,27 @@ function loadQuestionItems() {
          var aunit = $('#aunit').val();*/
 
 
+        var user_id =  $('#user_id').val();
+
+        var datefromDynamic = $('#datefrom').val();
+        var score_bottle = $('#score_bottle').val();
+        var attempts = $('#attempts').val();
 
 
-        var user_id =  htmlspecialchars($('#user_id').val());
+
+        var user_id =  $('#user_id').val();
+
+        var datefromDynamic = $('#datefrom').val();
+        var score_bottle = $('#score_bottle').val();
+        var attempts = $('#attempts').val();
+
+        var divisions = $('#divisions').val();
+        var area = $('#area').val();
+        var aunit = $('#aunit').val();
+
+
+
+       /* var user_id =  $('#user_id').val());
 
         var datefromDynamic = $('#datefrom').val();
         var score_bottle = htmlspecialchars($('#score_bottle').val());
@@ -394,7 +412,7 @@ function loadQuestionItems() {
 
         var divisions = htmlspecialchars($('#divisions').val());
         var area = htmlspecialchars($('#area').val());
-        var aunit = htmlspecialchars($('#aunit').val());
+        var aunit = htmlspecialchars($('#aunit').val());*/
 
 
         console.log('Attempts', attempts);
@@ -434,6 +452,7 @@ function loadQuestionItems() {
                         console.log('score updated');
                         // navigator.notification.alert('score updated');
                         window.location.replace('index.html');
+                        $('#pop-alert').hide();
 
                     }
                 });

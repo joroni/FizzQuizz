@@ -200,7 +200,7 @@ function checkQuizTake() {
         $('#playQuiz').removeAttr('disabled');
       //  videoScreen();
        // window.open(base_url + "/app/views/media/video.php", "_blank", "location=no", "closebuttoncaption=Return");
-        window.open(base_url + "/app/views/media/teaser.html", "_blank", "location=no", "closebuttoncaption=Return");
+       // window.open(base_url + "/app/views/media/teaser.html", "_blank", "location=no", "closebuttoncaption=Return");
 
     }
 }
