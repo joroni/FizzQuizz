@@ -10,9 +10,7 @@
 
 
 
-htmlspecialchars = function(s) {
-	return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\//g, "-");;
-};
+
 
 function check_storage(){
 	/*
