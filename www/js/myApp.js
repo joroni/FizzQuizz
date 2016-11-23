@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     $('#loader').show();
     setTimeout(myLoading, 3000);
@@ -7,6 +9,14 @@ $(document).ready(function () {
         $('#loader').hide();
 
     }
+
+
+    var current = 7;
+
+    $("#notiFier > a [data-badge='" + current +"']");
+
+
+   // $("#notiFier").find("a:data(5)").on('mouse')
 
 });
 
@@ -25,6 +35,25 @@ function loaderSpin() {
 
 
 
+function loaderSpinMini() {
+
+
+    $('#loader-mini').show();
+    setTimeout(myLoading, 3000);
+
+    function myLoading() {
+
+
+        $('#loader-mini').hide();
+
+    }
+
+}
+
+
+
+
+
 
 $(document).ready(function () {
 
@@ -37,7 +66,7 @@ $(document).ready(function () {
 
         $('#userProf').on('click', function(){
 
-            window.location = 'main.html';
+            window.location = 'index.html';
             //$('.main-buttons li a').addClass('animated zoomIn');
         });
 
@@ -179,6 +208,72 @@ $(function() {
     });
 
 });
+
+/*
+$(".sweet-message").on('click', function() {
+    $(this).removeClass('unread');
+});
+*/
+
+
+function openLeaderBoard() {
+window.open('http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/admins/mobile_controllers/user_result.php','_blank','location=no','closebuttoncaption=Return')
+}
+
+
+function externalLoad() {
+    loaderSpinMini();
+   // $("#externalLoad").html('<object style="width:100%; height: 100%;" data="video-playlist.html"/>');
+
+
+
+
+    /******** video ****/
+
+//Ensure all links in the div "#player" act in the same way:
+    var video_playlist = document.getElementById("player");
+    var links = video_playlist.getElementsByTagName('a');
+    for (var i=0; i<links.length; i++) {
+        links[i].onclick = handler;
+    };
+//Give functionality to the links:
+    function handler(e) {
+        e.preventDefault(); //Prevents default action of links going directly to the source file
+        videotarget = this.getAttribute("href"); //looks at the filename in the link's href attribute
+        filename = videotarget.substr(0, videotarget.lastIndexOf('.')) || videotarget; //Splits the filename and takes everything before the ".", giving us jus tname without the extension
+        video = document.querySelector("#player video"); //Finds div #player and video
+        video.removeAttribute("poster"); //Removes the poster attribute in the video tag
+        source = document.querySelectorAll("#player video source"); //Finds source elements inside the video tag
+        source[0].src = filename + ".mp4"; //defines the MP4 source
+       // source[1].src = filename + ".webm"; //defines the WEBM source
+      //  source[2].src = filename + ".ogv"; //defines the OGG source
+        video.load(); //Loads video when video is selected
+        video.play(); //Plays video automatically
+    };
+
+    $('#playlist > a').on('click', function () {
+
+        $('#playlist > a').removeClass('selected');
+        $(this).addClass('selected');
+    })
+
+
+}
+
+function closeDrawer() {
+    $('.mdl-layout__drawer').removeClass('is-visible');
+    $('.mdl-layout__obfuscator').hide();
+
+
+}
+
+
+function openDrawer() {
+    $('.mdl-layout__drawer').addClass('is-visible');
+    $('.mdl-layout__obfuscator').show();
+
+
+}
 
 
 
