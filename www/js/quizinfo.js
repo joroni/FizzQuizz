@@ -71,12 +71,13 @@ function validateMyTurn() {
         var checkLastQuiz = localStorage.getItem('checkLQuiz');
         if (dateFrStringVerify === checkLastQuiz) {
             $('#pop-alert').hide();
+            alertCalculating();
             console.log('Already took');
             $('#getStarted2').attr('disabled', 'disabled');
             $('#getStarted2').html('<p>See you on the next round...</p>');
 
         } else {
-
+            $('.sweet-alert .sa.sa-custom').css('display', 'none');
             console.log('Ok really first time');
             $('#getStarted2').html('<p>PLAY!</p>');
             $('#getStarted2').removeAttr('disabled', 'disabled');
@@ -85,6 +86,14 @@ function validateMyTurn() {
         }
 
 
+        function alertCalculating(){
+
+            $('.sweet-alert .sa.sa-custom').css('display', 'inline-block');
+            $('.sweet-alert .sa-icon.sa-success').hide();
+
+            $('.sweet-alert h2').html('checking');
+            $('.sweet-alert .sa-confirm-button-container').hide();
+        }
 
 
 
