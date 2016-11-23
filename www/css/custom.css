@@ -225,14 +225,16 @@ ul.center-list li {
 
 
 
-main#fizzquizz, .mdl-layout.mdl-js-layout.mdl-layout--fixed-header.mdl-layout--fixed-tabs.is-small-screen.is-upgraded{
+main#fizzquizz, .mdl-layout.mdl-js-layout.mdl-layout--fixed-header.mdl-layout--fixed-tabs.is-small-screen.is-upgraded, body#profile{
     background: #d10000 !important;
     background: url(../img/bubbles.gif) #f8f8f8 no-repeat !important;
     background-size: cover !important;
 
 }
 
-
+body#profile header.mdl-layout__header.is-casting-shadow {
+    opacity:0;
+}
 body.index-page .mdl-layout__content {
     background-color: #f8f8f8 !important;
     background-image: none !important;

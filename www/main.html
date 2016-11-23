@@ -34,8 +34,8 @@
     <script type="text/javascript" charset="utf-8">
         function onLoad() {
             document.addEventListener("deviceready", onDeviceReady, false);
-            loadQuizDetails();
-            getInitQuizData();
+          //  loadQuizDetails();
+           // getInitQuizData();
         }
 
         // cordova is ready
@@ -54,11 +54,7 @@
                 //  $('#raysLogo').append('<span style="z-index: 200;">Loading Quiz Data</span>');
                 //loaderSpinMini();
 
-                // getInitQuizData();
-                get_Quiz_History();
-                loadQuizDetails();
-
-                getQuizData();
+                validateMyTurn();
 
 
             }, 3000);
@@ -88,10 +84,11 @@
             function myFunctionLoading() {
                 $('#loader-mini').show();
                 $('#raysLogo').append('<span>Loading Quiz Data</span>');
-                get_Last_Quiz_Record();
-                getQuizData();
-                get_Quiz_History();
+              //  get_Last_Quiz_Record();
+                //getQuizData();
+                //get_Quiz_History();
 
+                validateMyTurn();
 
                 setTimeout(myFunctionLoadingOut, 3000);
                 function myFunctionLoadingOut() {
