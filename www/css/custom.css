@@ -233,7 +233,7 @@ main#fizzquizz, .mdl-layout.mdl-js-layout.mdl-layout--fixed-header.mdl-layout--f
 }
 
 body#profile header.mdl-layout__header.is-casting-shadow {
-    opacity:0;
+    opacity:1;
 }
 body.index-page .mdl-layout__content {
     background-color: #f8f8f8 !important;

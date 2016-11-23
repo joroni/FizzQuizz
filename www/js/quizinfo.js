@@ -1,5 +1,5 @@
 
-
+$('#pop-alert').hide();
 /*********** RUN ONLY ONCE JUST TO GET THE LATEST USER'S QUIZ RECORD IN A TABLE ****************/
 function get_Quiz_History() {
     //$('#output').empty();
@@ -70,17 +70,22 @@ function validateMyTurn() {
         dateFrStringVerify = localStorage.getItem('dateFrString');
         var checkLastQuiz = localStorage.getItem('checkLQuiz');
         if (dateFrStringVerify === checkLastQuiz) {
-            console.log('Already took');
             $('#pop-alert').hide();
+            console.log('Already took');
             $('#getStarted2').attr('disabled', 'disabled');
             $('#getStarted2').html('<p>See you on the next round...</p>');
 
         } else {
+
             console.log('Ok really first time');
             $('#getStarted2').html('<p>PLAY!</p>');
             $('#getStarted2').removeAttr('disabled', 'disabled');
             $('#pop-alert').show();
+
         }
+
+
+
 
 
         /*  getInitQuizData(); */
@@ -114,6 +119,13 @@ function ConfirmOk() {
     $('#pop-alert').hide();
     window.location.replace('fizzquizzData.html');
 }
+
+
+
+function goto_home() {
+    window.location.replace('main.html');
+}
+
 
 
 //getQuizData();
@@ -157,8 +169,10 @@ $('#playQuiz').on('click', function () {
 });
 
 
-
-pullFreshQuizItems();
 get_last_quiz_row();
+pullFreshQuizItems();
 get_Quiz_History();
 validateMyTurn();
+
+
+
