@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5a1e43f-5b04-4bc3-a79a-7308079d0c0b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/custom.css" afterPath="$PROJECT_DIR$/www/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fizzquizzData.html" afterPath="$PROJECT_DIR$/www/fizzquizzData.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/myApp.js" afterPath="$PROJECT_DIR$/www/js/myApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/quizinfo.js" afterPath="$PROJECT_DIR$/www/js/quizinfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/main.html" afterPath="$PROJECT_DIR$/www/main.html" />
-    </list>
+    <list default="true" id="d5a1e43f-5b04-4bc3-a79a-7308079d0c0b" name="Default" comment="" />
     <ignored path="FizzQuizz-Alpha.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -405,12 +397,12 @@
       <workItem from="1480034427524" duration="596000" />
       <workItem from="1480050595177" duration="574000" />
       <workItem from="1480082762593" duration="685000" />
-      <workItem from="1480088336283" duration="2897000" />
+      <workItem from="1480088336283" duration="3012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33494000" />
+    <option name="totallyTimeSpent" value="33609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
