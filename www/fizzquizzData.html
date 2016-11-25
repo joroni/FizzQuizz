@@ -31,8 +31,9 @@
         // device APIs are available
         //
         function onDeviceReady() {
-          /*  iabRef = window.open('http://apache.org', '_blank', 'location=no');
-            iabRef.addEventListener('loadstop', replaceHeaderImage);
+        //    window.open(base_url + "/app/views/media/teaser.html", "_blank", "location=no", "closebuttoncaption=Return");
+          iabRef = window.open('http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/app/views/media/teaser.html', '_blank', 'location=no');
+            /*  iabRef.addEventListener('loadstop', replaceHeaderImage);
             iabRef.addEventListener('exit', iabClose);*/
         }
 
@@ -73,7 +74,7 @@
     </style>
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' type='text/css'>
     <link rel='stylesheet' href='css/custom.css' type='text/css'>
     <link rel='stylesheet' href='css/animate.css' type='text/css'>
     <script src='js/jquery-3.1.0.min.js'></script>
@@ -459,7 +460,7 @@ function loadQuestionItems() {
             }
 
             localStorage.setItem('recent_quiz', datefromDynamic);
-
+            goto_home();
 
         });
     }

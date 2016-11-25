@@ -15,20 +15,20 @@
     <link href='css/media.css' media='screen' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/rays.css" type="text/css">
     <link rel="stylesheet" href="css/table-sorter/tablesorter.css" type="text/css">
     <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <link href="sweetalert/docs.css" rel="stylesheet">
     <script src="sweetalert/sweetalert.js"></script>
     <link rel="stylesheet" href="sweetalert/sweetalert.css">
     <style>
         /* boooo opera */
-        -o-transition:rotate(3600 deg)
-        ; /* works */
+        -o-transition:rotate(3600 deg);
+         /* works */
     </style>
     <script src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -36,6 +36,7 @@
             document.addEventListener("deviceready", onDeviceReady, false);
           //  loadQuizDetails();
            // getInitQuizData();
+            loaderSpinMini();
         }
 
         // cordova is ready
@@ -47,17 +48,9 @@
                             //document.getElementById("result1").innerHTML += '<li> ' + data[i]['name'] + '</li>';
                             console.log(data[i]['name']);
                         }
-                    }
-            );
+                        validateMyTurn();
 
-            setTimeout(function () {
-                //  $('#raysLogo').append('<span style="z-index: 200;">Loading Quiz Data</span>');
-                //loaderSpinMini();
-
-                validateMyTurn();
-
-
-            }, 3000);
+        });
         }
     </script>
 
@@ -69,10 +62,10 @@
     <script src="js/myApp.js"></script>
     <script src="js/user.js"></script>
     <script src="js/quizinfo.js"></script>
-    <!--<script charset="utf-8" src="https://cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>-->
+
     <script charset="utf-8" src="js/jquery.dataTables.js"></script>
     <script charset="utf-8" src="https://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
-    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script src="js/jquery.form.js"></script>
     <script type="text/javascript" charset="utf-8">
 
 
@@ -202,7 +195,7 @@
 
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
 
-            <a href="#fixed-tab-home" class="mdl-layout__tab is-active muidocs-icon-action-home">Home</a>
+            <a href="#fixed-tab-home" onclick="goto_home();" class="mdl-layout__tab is-active muidocs-icon-action-home">Home</a>
             <a href="#fixed-tab-profile" onclick="myProfile();" class="mdl-layout__tab">Profile</a> 
             <a href="#fixed-tab-profile" onclick="openLeaderBoard();" class="mdl-layout__tab">Leader  Board</a> 
             <a href="#fixed-tab-notify-view" onclick="externalLoad();" class="mdl-layout__tab">Videos</a>  
@@ -216,6 +209,11 @@
     <main class="mdl-layout__content">
         <section class="mdl-layout__tab-panel is-active" id="fixed-tab-home">
             <div class="page-content" style="text-align: center;">
+                <script>
+                function onDeviceReady() {
+                    validateMyTurn();
+                }
+                </script>
                 <!--<button type="button" class="mdl-button show-modal" style="background: #d10000; z-index:999999;">Show Modal
                    </button>-->
                 <ul class="center-list main-buttons">

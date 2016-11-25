@@ -71,12 +71,14 @@ function validateMyTurn() {
         var checkLastQuiz = localStorage.getItem('checkLQuiz');
         if (dateFrStringVerify === checkLastQuiz) {
             $('#pop-alert').hide();
+            loaderSpinMini();
             alertCalculating();
             console.log('Already took');
             $('#getStarted2').attr('disabled', 'disabled');
             $('#getStarted2').html('<p>See you on the next round...</p>');
 
         } else {
+            loaderSpinMini();
             alertCalculatingNewSet();
             console.log('Ok really first time');
             $('#getStarted2').html('<p>PLAY!</p>');
@@ -145,6 +147,42 @@ function ConfirmOk() {
 function goto_home() {
     window.location.replace('main.html');
 }
+
+
+
+
+
+
+function checkIfQuiz() {
+
+//check kung my questions
+    $.post( "http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/check_quiz_status/"+localStorage.getItem("user_id"))
+        .done(function( data ) {
+            if(data == 1) {
+                console.log('Quiz has contents');
+               // alert('1');
+                validateMyTurn();
+                $('#getStarted2').removeAttr('disabled', 'disabled');
+
+                $('#getStarted2').html('<p>Get Started!</p>');
+
+
+
+            }
+            else {
+                validateMyTurn();
+                alert('No new quiz as of this time');
+                $('#getStarted2').attr('disabled', 'disabled');
+
+                $('#getStarted2').html('<p>See you on the next round...</p>');
+                //    alertQuizNoContent();
+                console.log('Quiz has NO contents');
+                //window.location.replace('quizempty.html');
+            }
+            //    alert(data);
+        })
+}
+
 
 
 
