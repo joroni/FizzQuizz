@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5a1e43f-5b04-4bc3-a79a-7308079d0c0b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/bubbles.mp4" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/custom.css" afterPath="$PROJECT_DIR$/www/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fizzquizz.html" afterPath="$PROJECT_DIR$/www/fizzquizz.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fizzquizzData.html" afterPath="$PROJECT_DIR$/www/fizzquizzData.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/all.js" afterPath="$PROJECT_DIR$/www/js/all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/quizinfo.js" afterPath="$PROJECT_DIR$/www/js/quizinfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/user.js" afterPath="$PROJECT_DIR$/www/js/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/main.html" afterPath="$PROJECT_DIR$/www/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/mainTempo.html" afterPath="$PROJECT_DIR$/www/mainTempo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/profile.html" afterPath="$PROJECT_DIR$/www/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/teaser.html" afterPath="$PROJECT_DIR$/www/teaser.html" />
-    </list>
+    <list default="true" id="d5a1e43f-5b04-4bc3-a79a-7308079d0c0b" name="Default" comment="" />
     <ignored path="FizzQuizz-Alpha.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -67,19 +53,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="all.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/all.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="4" column="89" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="89" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1275">
@@ -404,12 +388,12 @@
       <workItem from="1480296999599" duration="487000" />
       <workItem from="1480328306337" duration="548000" />
       <workItem from="1480349417504" duration="388000" />
-      <workItem from="1480498334948" duration="807000" />
+      <workItem from="1480498334948" duration="1325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75587000" />
+    <option name="totallyTimeSpent" value="76105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -810,16 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="89" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="89" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/fizzquizzData.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -874,6 +848,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="85" column="67" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#center#0;n#div#0;n#section#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1480090763000" expanded="true" signature="2836:2871" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -901,14 +886,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/www/js/all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="67" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#div#1;n#center#0;n#div#0;n#section#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1480090763000" expanded="true" signature="2836:2871" placeholder="..." />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
