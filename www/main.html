@@ -25,6 +25,27 @@
     <link href="sweetalert/docs.css" rel="stylesheet">
     <script src="sweetalert/sweetalert.js"></script>
     <link rel="stylesheet" href="sweetalert/sweetalert.css">
+
+    <link href='css/elements.css' rel='stylesheet' type='text/css'>
+
+
+
+
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+    <script src="js/prefixfree.min.js"></script>
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+
     <style>
         /* boooo opera */
         -o-transition:rotate(3600 deg);
@@ -101,6 +122,12 @@
     </script>
 </head>
 <body onload="onLoad()">
+
+<div id='stars' class="star-anim" style="z-index: 0;"></div>
+<div id='stars2' class="star-anim" style="z-index: 0;"></div>
+<div id='stars3' class="star-anim" style="z-index: 0;"></div>
+
+
 <div id="loader" style="display: none;">
     <div class="mdl-spinner mdl-js-spinner is-active"></div>
 </div>
@@ -111,7 +138,7 @@
 
 
 
-
+<!--
 <div id="pop-alert" class="sweet-alert" tabindex="-1" data-custom-class="" data-has-cancel-button="true" data-has-confirm-button="true" data-allow-outside-click="false" data-has-done-function="false" data-animation="pop" data-timer="null" style="display: none;">
     <div class="sa-icon sa-error" style="display: none;">
 		<span class="sa-x-mark">
@@ -152,7 +179,7 @@
     </div>
 </div>
 
-
+-->
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
@@ -240,6 +267,7 @@
                            style="display: none; color: #d10000 !important; min-width: 100%; z-index: 100;"
                            class="btn-text button btn btn-lg mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Get
                             Started</a>
+                        <span id="after_quiz"></span>
                         <!-- <a href="quiz.html" target="_blank" location="no"
                            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
                             Play
@@ -260,7 +288,7 @@
                     <h5><span id="useremail"></span></h5>
                     <div id="capturePhoto" style="display: none;">
                         <form id="myForms"
-                              action="http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/uploadpicc"
+                              action=base_url +"/index.php/uploadpicc"
                               method="post" enctype="multipart/form-data">
                             <input type="hidden" name="user_id_upload" id="user_iddddddd"/>
                             <!-- <div class="mdl-textfield mdl-js-textfield">
@@ -640,7 +668,7 @@
     $(document).ready(function(){
 
 
-        $.post( "http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/getvideo")
+        $.post( base_url +"/index.php/getvideo")
                 .done(function( data ) {
                     $('#externalLoad').html(data);
                 });

@@ -75,14 +75,17 @@ function validateMyTurn() {
             alertCalculating();
             console.log('Already took');
             $('#getStarted2').attr('disabled', 'disabled');
-            $('#getStarted2').html('<p>See you on the next round...</p>');
+            $('#after_quiz').html('<p>See you on the next round...</p>');
+            $('#getStarted2').remove();
+          //  $('#getStarted2').css('background', 'none');
 
         } else {
             loaderSpinMini();
             alertCalculatingNewSet();
-            console.log('Ok really first time');
-            $('#getStarted2').html('<p>PLAY!</p>');
+            console.log('Ok really first time')
             $('#getStarted2').removeAttr('disabled', 'disabled');
+            $('#getStarted2').html('<span class="animated-icon"></span>');
+
             $('#pop-alert').show();
 
         }
@@ -117,6 +120,10 @@ function validateMyTurn() {
 }
 
 
+
+
+
+
 /*********** GETTING THE QUESTIONS AND ANSWER SCRIPT  ****************/
 function pullFreshQuizItems() { //getQuizData
 
@@ -125,11 +132,12 @@ function pullFreshQuizItems() { //getQuizData
     var endDate = localStorage.getItem('dateToString');
 
 
-    $.get("http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/jsonQuiz/" + myDivision2 + "/" + endDate, function (data) {
+    $.get(base_url +'/index.php/jsonQuiz/' + myDivision2 + '/' + endDate, function (data) {
         // $( ".result" ).html( data );
         console.log(data);
         // alert( "Load was performed." );
         localStorage.setItem('QuizData', data);
+
     });
 
 
@@ -140,6 +148,13 @@ function ConfirmOk() {
 
     $('#pop-alert').hide();
     window.location.replace('fizzquizzData.html');
+}
+
+
+function letterInfo() {
+    localStorage.removeItem('QuizData');
+    $('#pop-alert').hide();
+    window.location.replace('index.html');
 }
 
 
@@ -156,7 +171,7 @@ function goto_home() {
 function checkIfQuiz() {
 
 //check kung my questions
-    $.post( "http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/check_quiz_status/"+localStorage.getItem("user_id"))
+    $.post( base_url +'/index.php/check_quiz_status/'+localStorage.getItem("user_id"))
         .done(function( data ) {
             if(data == 1) {
                 console.log('Quiz has contents');

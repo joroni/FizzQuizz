@@ -64,8 +64,15 @@ check_storage();
 				}else if(data == 1){
 					localStorage.setItem("userlogin", user_name_input);
 					get_Quiz_History();
+
+					$.post( "http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/servertime/")
+						.done(function( data ) {
+							localStorage.setItem("servertime", data);
+						});
+
+
 					console.log("get_Quiz_History");
-					window.location.href = "profile.html";
+					window.location.href = "main.html";
 
 				}
 			});
@@ -142,7 +149,7 @@ function register(){
                     /**  2B  ********************* If signin/signup success, go to profile building ****************/
 
 
-					window.location.href = "profile.html";
+					window.location.href = "main.html";
 
 				}else {
 					alert(data);

@@ -41,9 +41,9 @@
     <script type="text/javascript" charset="utf-8">
         function onLoad() {
 
-            pullFreshQuizItems();
-            get_last_quiz_row();
-            get_Quiz_History();
+          // pullfreshquizitems();
+            //get_last_quiz_row();
+            //get_Quiz_History();
             document.addEventListener("deviceready", onDeviceReady, false);
 
         }
@@ -80,17 +80,18 @@
     <script type="text/javascript" charset="utf-8">
         function loadQuizDetails() {
 
-            setTimeout(myFunctionLoading, 4000);
+            setTimeout(myFunctionLoading, 1000);
 
             function myFunctionLoading() {
                 $('#loader-mini').show();
                 $('#raysLogo').append('<span>Loading Quiz Data</span>');
-                get_last_quiz_row();
+
                 pullFreshQuizItems();
-                get_Quiz_History();
+                get_last_quiz_row();
+              //  get_quiz_history();
                 validateMyTurn();
 
-                setTimeout(myFunctionLoadingOut, 3000);
+                setTimeout(myFunctionLoadingOut, 1000);
                 function myFunctionLoadingOut() {
                     $('#loader-mini').hide();
                 }
@@ -99,7 +100,7 @@
 
             function uploadingImg() {
                 $('#loader-mini').show();
-                setTimeout(myFunction, 3000);
+                setTimeout(myFunction, 1000);
 
             }
         }
@@ -148,7 +149,7 @@
         <button class="cancel btn btn-lg btn-default" tabindex="2" style="display: none;">Cancel</button>
         <div class="sa-confirm-button-container">
             <button class="confirm btn btn-lg btn-primary" onclick="ConfirmOk();" tabindex="1"
-                    style="display: inline-block;">Play!
+                    style="display: inline-block;">Get Started...
             </button>
             <div class="la-ball-fall">
                 <div></div>
@@ -167,7 +168,7 @@
 					<img src="img/logo-horizontal2x.png">
 					</span> 
 					</span>
-            <div class="mdl-textfield--align-right">
+            <div class="mdl-textfield--align-right hidden">
                 <button id="right_btn" class="mdl-button mdl-js-button mdl-button--icon" onclick="closeDrawer();"><i
                         class="material-icons">more_vert</i>
                 </button>
@@ -237,13 +238,16 @@
     $(document).ready(function () {
 
 
-        $.post("http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/getvideo")
+        $.post(base_url +"/index.php/getvideo")
                 .done(function ( data ) {
                     $('#externalLoad').html(data);
                 });
 
 
     });
+
+
+
 
 
 </script>

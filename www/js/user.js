@@ -5,8 +5,8 @@ function log_out() {
 
 }
 
-var base_url = "http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver";
-
+//var base_url = "http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver";
+var base_url = "http://ec2-54-218-211-199.us-west-2.compute.amazonaws.com/fizzquizzserver";
 
 $(function () {
     var user = localStorage.getItem('userlogin');
@@ -106,9 +106,10 @@ $(function () {
             $('#getStarted2').on('click', function ( e ) {
                 e.preventDefault();
                 // var checkLQuiz = localStorage.getItem('fizzquizz');
-
+                
                 // window.location.replace(fizzquizz);
-                window.location.replace('fizzquizzData.html');
+             //   window.location.replace('fizzquizzData.html');
+                window.location.replace('profile.html');
                 console.log('Confirm my FizzQuizz link:', fizzquizz);
 
 
