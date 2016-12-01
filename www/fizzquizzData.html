@@ -421,7 +421,7 @@ function loadQuestionItems() {
             else {
 
 
-                $.get(base_url + '/index.php' + '/user_results_new/update/' + user_id + '/' + datefromDynamic + '/' + area + '/' + divisions + '/' + aunit + '/'  + score_bottle, function ( data ) {
+                $.get('http://ec2-54-218-211-199.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/user_results_new/update/' + user_id + '/' + datefromDynamic + '/' + area + '/' + divisions + '/' + aunit + '/'  + score_bottle, function ( data ) {
                     //$.post('http://ec2-54-191-6-205.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/update/user', {username: username, password: password, fname: fname})
 
                     if (data == 0) {
