@@ -165,6 +165,7 @@ function letterInfo() {
 
 function goto_home() {
     window.location.replace('main.html');
+	 $('#oops').hide();
 }
 
 
