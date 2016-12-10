@@ -206,11 +206,11 @@ function mySlickQuiz() {
         console.log('dateToStringNow: ' + dateToStringNow);
 		// localStorage.setItem('dateToString1DayAfter', dateToString1DayAfter);
         localStorage.setItem('dateToStringNow', dateToStringNow);
-        console.log('dateToString24: ' + dateToString24);
+       // console.log('dateToString24: ' + dateToString24);
         localStorage.setItem('dateToString24', dateToString24);
-        console.log('dateToString48: ' + dateToString48);
+        //console.log('dateToString48: ' + dateToString48);
         localStorage.setItem('dateToString48', dateToString48);
-        console.log('dateToString72: ' + dateToString72);
+        //console.log('dateToString72: ' + dateToString72);
         localStorage.setItem('dateToString72', dateToString72);
 
 
@@ -240,8 +240,8 @@ function mySlickQuiz() {
         //(dateStringToday <= dateToString )
 
         // var dateToString24Compare = localStorage.getItem(dateToString24");
-        var dateToString24Compare = localStorage.getItem("dateToString24");
-        console.log(dateToString24Compare);
+       // var dateToString24Compare = localStorage.getItem("dateToString24");
+        //console.log(dateToString24Compare);
 		
         if (dateStringToday == dateFrString) {
 		//if (dateStringToday >= dateFrStringV2 && dateStringToday <= dateToStringV2) {
