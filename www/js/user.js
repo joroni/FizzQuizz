@@ -124,6 +124,7 @@ $(function () {
 function myProfile() {
     var user = localStorage.getItem('userlogin');
     loaderSpinMini();
+    $('#fixed-tab-profile').removeClass('hidden');
     $.getJSON(base_url + '/index.php/get_user_details/' + user, function ( result ) {
 
 

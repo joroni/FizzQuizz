@@ -12,6 +12,32 @@
 
 
 
+
+
+		$.post("http://ec2-54-218-211-199.us-west-2.compute.amazonaws.com/fizzquizzserver/index.php/servertime")
+			.done(function ( data ) {
+
+
+				$.getJSON( "http://ip-api.com/json/"+ data, function( json ) {
+
+
+					console.log(json.timezone);
+					var newDate = new Date();
+					newDate.timezone = json.timezone;
+//$('#Date').html((newDate.getMonth() + 1) + '/' + newDate.getDate() + '/' + newDate.getFullYear());
+					//document.writeln(newDate.getFullYear()+'/'+newDate.getDate()+'/'+(newDate.getMonth() + 1));
+					var localTZ = newDate.getFullYear()+'/'+newDate.getDate()+'/'+(newDate.getMonth() + 1);
+					localStorage.setItem('mylocaltime', localTZ);
+				});
+
+
+
+			});
+
+
+
+
+
 function check_storage(){
 	/*
 
@@ -70,9 +96,11 @@ check_storage();
 							localStorage.setItem("servertime", data);
 						});
 
-
+					
 					console.log("get_Quiz_History");
-					window.location.href = "main.html";
+					window.location.href = "index.html";
+					
+					get_Quiz_History();
 
 				}
 			});

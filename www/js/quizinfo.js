@@ -15,7 +15,10 @@ function get_Quiz_History() {
 
 
         });
+
     })
+
+
 }
 
 
@@ -63,8 +66,8 @@ function validateMyTurn() {
     $.getJSON(base_url + '/index.php/jsonQuiz/' + myDivision2, function (result) {
 
 
-        console.log('date_published', result.date_published);
-        console.log('date_expire', result.date_expire);
+       // console.log('date_published', result.date_published);
+        //console.log('date_expire', result.date_expire);
         localStorage.setItem('dateFrString', result.date_published);
         localStorage.setItem('dateToString', result.date_expire);
         dateFrStringVerify = localStorage.getItem('dateFrString');
@@ -77,12 +80,15 @@ function validateMyTurn() {
             $('#getStarted2').attr('disabled', 'disabled');
             $('#after_quiz').html('<p>See you on the next round...</p>');
             $('#getStarted2').remove();
+			$('#getStarted2').hide();
           //  $('#getStarted2').css('background', 'none');
 
         } else {
             loaderSpinMini();
             alertCalculatingNewSet();
-            console.log('Ok really first time')
+            console.log('Ok really first time');
+
+            $('#oops').hide();
             $('#getStarted2').removeAttr('disabled', 'disabled');
             $('#getStarted2').html('<span class="animated-icon"></span>');
 
@@ -161,6 +167,7 @@ function letterInfo() {
 
 function goto_home() {
     window.location.replace('main.html');
+	 $('#oops').hide();
 }
 
 
