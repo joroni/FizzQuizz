@@ -169,9 +169,12 @@ function mySlickQuiz() {
 		var dateFrString = localStorage.getItem('dateFrString');
 
         var dateToString = localStorage.getItem('dateToString');
+<<<<<<< HEAD
 
 
         var dateToStringNow = localStorage.getItem('mylocaltime');
+=======
+>>>>>>> origin/master
 		
 		
 		var dateFrString2 = new Date(dateFrString);
@@ -179,10 +182,15 @@ function mySlickQuiz() {
 		
 		var dateFrString3 = new Date(dateFrString);
 		dateFrString3.setDate(dateFrString3.getDate()+2);
+<<<<<<< HEAD
 
 
         var dateCurrString = new Date(dateToStringNow);
 
+=======
+		
+		
+>>>>>>> origin/master
 		
 	//	var dateToString1 = new Date(dateToString);
 		//dateToString1.setDate(dateToString1.getDate()+1);
@@ -199,14 +207,20 @@ function mySlickQuiz() {
 		//var dateToString1DayAfter = dateToString1.format("yyyy-mm-dd");
 		var dateFrString2 = dateFrString2.format("yyyy-mm-dd");
 		var dateFrString3 = dateFrString3.format("yyyy-mm-dd");
+<<<<<<< HEAD
         var dateCurrString = dateCurrString.format("yyyy-mm-dd");
         //var dateToString24 = dateto.format("yyyy-mm-dd");
+=======
+        var dateToStringNow = date.format("yyyy-mm-dd");
+        var dateToString24 = dateto.format("yyyy-mm-dd");
+>>>>>>> origin/master
         var dateToString48 = dateto2.format("yyyy-mm-dd");
         var dateToString72 = dateto3.format("yyyy-mm-dd");
 
         //var setnames = localStorage.setItem('setnames', dateFrString);
         console.log('dateFrString: ' + dateFrString);
 		console.log('dateToString: ' + dateToString);
+<<<<<<< HEAD
         console.log('dateFrString2: ' + dateFrString2);
         console.log('dateFrString3: ' + dateFrString3);
 
@@ -222,6 +236,18 @@ function mySlickQuiz() {
        // localStorage.setItem('dateToString48', dateToString48);
         //console.log('dateToString72: ' + dateToString72);
         //localStorage.setItem('dateToString72', dateToString72);
+=======
+		//console.log('dateToString1DayAfter: ' + dateToString1DayAfter);
+        console.log('dateToStringNow: ' + dateToStringNow);
+		// localStorage.setItem('dateToString1DayAfter', dateToString1DayAfter);
+        localStorage.setItem('dateToStringNow', dateToStringNow);
+       // console.log('dateToString24: ' + dateToString24);
+        localStorage.setItem('dateToString24', dateToString24);
+        //console.log('dateToString48: ' + dateToString48);
+        localStorage.setItem('dateToString48', dateToString48);
+        //console.log('dateToString72: ' + dateToString72);
+        localStorage.setItem('dateToString72', dateToString72);
+>>>>>>> origin/master
 
 
 
@@ -238,7 +264,11 @@ function mySlickQuiz() {
 
         //dateto = date.setDate(date.getDate() + 1);
         //today.setDate(today.getDate() + 3);
+<<<<<<< HEAD
        // var dateStringToday = today.format("yyyy-mm-dd");
+=======
+        var dateStringToday = today.format("yyyy-mm-dd");
+>>>>>>> origin/master
         // add a day
 
 
@@ -253,9 +283,13 @@ function mySlickQuiz() {
        // var dateToString24Compare = localStorage.getItem("dateToString24");
         //console.log(dateToString24Compare);
 		
+<<<<<<< HEAD
        // if (dateStringToday == dateFrString) {
 
             if (dateCurrString == dateFrString) {
+=======
+        if (dateStringToday == dateFrString) {
+>>>>>>> origin/master
 		//if (dateStringToday >= dateFrStringV2 && dateStringToday <= dateToStringV2) {
             console.log('3 points' );
             var unitResult = 'You got 3 Bottles';
@@ -264,13 +298,21 @@ function mySlickQuiz() {
 		//} else if (dateStringToday == dateToString24  && dateStringToday == dateToString24Compare) {
 		//} else if (dateStringToday > dateFrString  && dateStringToday < dateToString) {
 		//} else if (dateStringToday == dateToString1DayAfter) {
+<<<<<<< HEAD
 		} else if (dateCurrString == dateFrString2) {
+=======
+		} else if (dateStringToday == dateFrString2) {
+>>>>>>> origin/master
 		  console.log('2 points');
             var unitResult = 'You got 2 Bottles';
             var timesScore = 2;
 
 		/*} else if (dateStringToday >= dateToString1DayAfter) { */
+<<<<<<< HEAD
 			} else if (dateCurrString == dateFrString3) {
+=======
+			} else if (dateStringToday == dateFrString3) {
+>>>>>>> origin/master
             console.log('1 point');
             var unitResult = 'You got 1 Bottle';
             var timesScore = 1;
@@ -375,9 +417,14 @@ function mySlickQuiz() {
             /*// Count the number of questions */
             var dateFromString = questions.date_published;
             var questionDateFrom = dateFrString;
+<<<<<<< HEAD
             var questionDateTo = dateToString;
           //  var questionDateFrom = dateFromString;
             //var questionDateTo = dateToString24;
+=======
+            var questionDateFrom = dateFromString;
+            var questionDateTo = dateToString24;
+>>>>>>> origin/master
 
             plugin.method = {
                 // Sets up the questions and answers based on above array
