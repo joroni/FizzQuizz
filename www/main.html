@@ -55,6 +55,8 @@
     <script type="text/javascript" charset="utf-8">
         function onLoad() {
             document.addEventListener("deviceready", onDeviceReady, false);
+            localStorage.removeItem('dateFrString');
+            localStorage.removeItem('dateToString');
             //loadQuizDetails();
           //  getInitQuizData();
 			 validateMyTurn();
